@@ -6588,6 +6588,7 @@ section.container.nwland .landing-front-text .landing-text {
 section.container.guarantee {
   z-index: 150;
   position: relative;
+  top: -10rem;
 }
 section.container.guarantee .panel {
   z-index: 200;

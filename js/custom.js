@@ -306,16 +306,16 @@ jQuery(function(){
 });
 
 /* ------------------------Firefox anchor fix------------------------ */
-$(document).ready(function(){
-        if ( $.browser.mozilla ) {
-            var h = window.location.hash;
-            if (h) {
-                var headerH = $('#navigation').outerHeight();
-                $('html, body').stop().animate({
-                    scrollTop: $(h).offset().top - headerH + "px"
-                }, 1200, 'easeInOutExpo');
-                event.preventDefault();
-            }
-        }
-    });
+//$(document).ready(function(){
+//        if ( $.browser.mozilla ) {
+//            var h = window.location.hash;
+//            if (h) {
+//                var headerH = $('#navigation').outerHeight();
+//                $('html, body').stop().animate({
+//                    scrollTop: $(h).offset().top - headerH + "px"
+//                }, 1200, 'easeInOutExpo');
+//                event.preventDefault();
+//            }
+//        }
+//    });
 
