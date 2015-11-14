@@ -1,0 +1,52 @@
+/* Naked Wines Test LESS code */
+body {
+  font-family: 'Roboto';
+}
+.landing-span {
+  background-color: #525252;
+  color: #ececec;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: solid #b9b9b9;
+  padding: 12px 12px;
+}
+section.container.nwland {
+  z-index: 1;
+}
+section.container.nwland .landing-img {
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  height: 800px;
+}
+section.container.nwland .landing-img img {
+  width: 128%;
+  height: 120%;
+  position: absolute;
+  left: -12rem;
+}
+section.container.nwland .landing-front-text {
+  z-index: 101;
+  position: relative;
+  text-align: center;
+}
+section.container.nwland .landing-front-text .landing-text {
+  position: absolute;
+  top: -50rem;
+  left: 40rem;
+}
+section.container.guarantee {
+  z-index: 150;
+  position: relative;
+}
+section.container.guarantee .panel {
+  z-index: 200;
+  border: 0;
+}
+section.container.guarantee .panel-heading {
+  border-color: 0;
+  background-color: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}

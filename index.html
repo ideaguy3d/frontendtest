@@ -4,7 +4,7 @@
 <!--[if IE 9]>
 <html class="ie ie9"> <![endif]-->
 <!--[if gt IE 9]><!-->
-<html> <!--<![endif]-->
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <title>NakedWines Responsive Template</title>
@@ -12,749 +12,83 @@
     <meta name="author" content="www.juliusalvarado.info">
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Library CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="css/fonts/font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" href="css/animations.css" media="screen">
-    <link rel="stylesheet" href="css/prettyPhoto.css" media="screen">
-    <link rel="stylesheet" href="css/jquery.bxslider.css" media="screen">
-    <!-- Theme CSS -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/testanims.css">
-    <!-- Skin -->
-    <link rel="stylesheet" href="css/colors/gray.css" class="colors">
-
-    <!-- Favicons -->
-    <link rel="shortcut icon" href="img/ico/favicon.ico">
-    <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <script src="js/respond.min.js"></script>
-    <![endif]-->
-    <!--[if IE]>
-    <link rel="stylesheet" href="css/ie.css">
-    <![endif]-->
+    <link rel="stylesheet" href="css/bootstrap/less/bootstrap.css">
 </head>
 
 
-<body data-spy="scroll" data-target="#navigation" data-offset="75">
-
-<!-- Page Pre-loader -->
-<div class="page-mask">
-    <div class="page-loader">
-        <div class="spinner"></div>
-    </div>
-</div>
-
-<div id="wines_isotope">
-
-    <!-- 12 wines sub page nav -->
-    <nav id="nakedwines-wine-details-nav">
-        <div class="nakedwines-nav-container">
-            <h2><a href="#section4" class="naked-wines-logo pull-left"><i class="fa fa-arrow-circle-left"></i>The Discovery Mixed Case</a></h2>
-            <!-- Animated Buy Button -->
-            <div class="top-logo pull-right" style="margin-right: 4%">
-                <div class="scrollNormal">
-                    <a href="index.html#section5">
-                        <img alt="Wines" src="img/nw/nw-buttonbig-update1.png" class="anim-btn-img">
-                    </a>
-                </div>
-                <div class="scrollDown">
-                    <a href="index.html#section5">
-                        <img alt="Wines" src="img/nw/nw-buttonbig-update2.png">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <!-- 3) the.12.wines -->
-    <section id="section3" class="wine container-fluid">
-        <!-- Title -->
-        <div class="row">
-            <div class="col-md-12 big-title">
-                <h2>The 12 Wines</h2>
-            </div>
-        </div>
-
-        <!-- Wine Filters -->
-        <div id="filters">
-            <ul class="clearfix">
-                <li><a id="all" href="#" data-filter="*" class="active"><h5>All</h5></a></li>
-                <li><a href="#" data-filter=".wordpress"><h5>Light Wines</h5></a></li>
-                <li><a href="#" data-filter=".jquery"><h5>Dark Wines</h5></a></li>
-                <li><a href="#" data-filter=".php"><h5>American</h5></a></li>
-                <li><a href="#" data-filter=".css"><h5>French</h5></a></li>
-                <li><a href="#" data-filter=".html"><h5>Best Sellers</h5></a></li>
-            </ul>
-        </div>
-
-        <!-- 12 wine img wrap using isotope plugin -->
-        <div id="wine-wrap">
-
-            <!-- wine 0 With PrettyPhoto  -->
-            <div class="wine-item one-four wordpress css">
-                <div class="img-holder">
-                    <img class="img-responsive" src="img/nw/w1-alex.png" alt="">
-
-                    <div class="img-overlay"></div>
-                    <div class="overlay-effect">
-                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="img/wine/wine1.png"><i class="fa fa-search"></i></a></span>
-                        <span class="RoundBg"><a href=""><i class="fa fa-shopping-cart"></i></a></span>
-                    </div>
-                </div>
-                <!-- wine details -->
-                <h2><strong>Bordeaux Superior</strong></h2>
-
-                <h3>Bestonnat Bordeaux Superieur 2014</h3>
-
-                <h3><strong>Country</strong> France</h3>
-
-                <h3><strong>Grape</strong> Cabernet & Merlot</h3>
-
-                <h3><strong>Bottle price</strong> $21.99</h3>
-            </div>
-
-            <!-- wine 1 With PrettyPhoto  -->
-            <div class="wine-item one-four php jquery">
-                <div class="img-holder">
-                    <img class="img-responsive" src="img/nw/w2-bahue.png" alt="">
-
-                    <div class="img-overlay"></div>
-                    <div class="overlay-effect">
-                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="img/wine/wine1.png"><i class="fa fa-search"></i></a>
-                        </span>
-                        <span class="RoundBg"><a href=""><i class="fa fa-shopping-cart"></i></a>
-                        </span>
-                    </div>
-                </div>
-                <!-- wine details -->
-                <h2><strong>Bordeaux Superior</strong></h2>
-
-                <h3>Bestonnat Bordeaux Superieur 2014</h3>
-
-                <h3><strong>Country</strong> France</h3>
-
-                <h3><strong>Grape</strong> Cabernet & Merlot</h3>
-
-                <h3><strong>Bottle price</strong> $21.99</h3>
-            </div>
-
-            <!-- wine 2 With PrettyPhoto  -->
-            <div class="wine-item one-four branding css html">
-                <div class="img-holder">
-                    <img class="img-responsive" src="img/nw/w3-boy-meets-girl.png" alt="">
-
-                    <div class="img-overlay"></div>
-                    <div class="overlay-effect">
-                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="img/wine/wine1.png"><i class="fa fa-search"></i></a>
-                        </span>
-                        <span class="RoundBg"><a href=""><i class="fa fa-shopping-cart"></i></a>
-                        </span>
-                    </div>
-                </div>
-                <!-- wine details -->
-                <h2><strong>Up-and-Coming Prodigy</strong></h2>
-
-                <h3>Bestonnat Bordeaux Superieur 2014</h3>
-
-                <h3><strong>Country</strong> USA</h3>
-
-                <h3><strong>Grape</strong> Cabernet Franc</h3>
-
-                <h3><strong>Bottle price</strong> $17.99</h3>
-            </div>
-
-            <!-- wine 3 With PrettyPhoto  -->
-            <div class="wine-item one-four branding jquery">
-                <div class="img-holder">
-                    <img class="img-responsive" src="img/nw/w4-rhones.png" alt="">
-
-                    <div class="img-overlay"></div>
-                    <div class="overlay-effect">
-                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="img/wine/wine1.png"><i class="fa fa-search"></i></a>
-                        </span>
-                        <span class="RoundBg"><a href=""><i class="fa fa-shopping-cart"></i></a>
-                        </span>
-                    </div>
-                </div>
-                <!-- wine details -->
-                <h2><strong>Clean, Crisp California</strong></h2>
-
-                <h3>Bestonnat Bordeaux Superieur 2014</h3>
-
-                <h3><strong>Country</strong> France</h3>
-
-                <h3><strong>Grape</strong> Cabernet & Merlot</h3>
-
-                <h3><strong>Bottle price</strong> $21.99</h3>
-            </div>
-
-            <!-- wine 4 With PrettyPhoto  -->
-            <div class="wine-item one-four php html css">
-                <div class="img-holder">
-                    <img class="img-responsive" src="img/nw/w5-minervois.png" alt="">
-
-                    <div class="img-overlay"></div>
-                    <div class="overlay-effect">
-                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="img/wine/wine1.png"><i class="fa fa-search"></i></a>
-                        </span>
-                        <span class="RoundBg"><a href=""><i class="fa fa-shopping-cart"></i></a>
-                        </span>
-                    </div>
-                </div>
-                <!-- wine details -->
-                <h2><strong>Bordeaux Superior</strong></h2>
-
-                <h3>Bestonnat Bordeaux Superieur 2014</h3>
-
-                <h3><strong>Country</strong> France</h3>
-
-                <h3><strong>Grape</strong> Cabernet & Merlot</h3>
-
-                <h3><strong>Bottle price</strong> $21.99</h3>
-            </div>
-
-            <!-- wine 5 With PrettyPhoto  -->
-            <div class="wine-item one-four wordpress jquery">
-                <div class="img-holder">
-                    <img class="img-responsive" src="img/nw/w6-millier-shiraz.png" alt="wine">
-
-                    <div class="img-overlay"></div>
-                    <div class="overlay-effect">
-                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="img/wine/wine1.png"><i class="fa fa-search"></i></a>
-                        </span>
-                        <span class="RoundBg"><a href=""><i class="fa fa-shopping-cart"></i></a>
-                        </span>
-                    </div>
-                </div>
-                <!-- wine details -->
-                <h2><strong>Bordeaux Superior</strong></h2>
-
-                <h3>Bestonnat Bordeaux Superieur 2014</h3>
-
-                <h3><strong>Country</strong> France</h3>
-
-                <h3><strong>Grape</strong> Cabernet & Merlot</h3>
-
-                <h3><strong>Bottle price</strong> $21.99</h3>
-            </div>
-
-            <!-- wine 6 With PrettyPhoto  -->
-            <div class="wine-item one-four css php html jquery">
-                <div class="img-holder">
-                    <img class="img-responsive" src="img/nw/w7-maltus-bordeaux.png" alt="">
-
-                    <div class="img-overlay"></div>
-                    <div class="overlay-effect">
-                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="img/wine/wine1.png"><i class="fa fa-search"></i></a>
-                        </span>
-                        <span class="RoundBg"><a href=""><i class="fa fa-shopping-cart"></i></a>
-                        </span>
-                    </div>
-                </div>
-                <!-- wine details -->
-                <h2><strong>Bordeaux Superior</strong></h2>
-
-                <h3>Bestonnat Bordeaux Superieur 2014</h3>
-
-                <h3><strong>Country</strong> France</h3>
-
-                <h3><strong>Grape</strong> Cabernet & Merlot</h3>
-
-                <h3><strong>Bottle price</strong> $21.99</h3>
-            </div>
-
-            <!-- wine 7 With PrettyPhoto  -->
-            <div class="wine-item one-four wordpress php css">
-                <div class="img-holder">
-                    <img class="img-responsive" src="img/nw/w8-castillo.png" alt="">
-
-                    <div class="img-overlay"></div>
-                    <div class="overlay-effect">
-                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="img/wine/wine1.png"><i class="fa fa-search"></i></a>
-                        </span>
-                        <span class="RoundBg"><a href=""><i class="fa fa-shopping-cart"></i></a>
-                        </span>
-                    </div>
-                </div>
-                <!-- wine details -->
-                <h2><strong>Bordeaux Superior</strong></h2>
-
-                <h3>Bestonnat Bordeaux Superieur 2014</h3>
-
-                <h3><strong>Country</strong> France</h3>
-
-                <h3><strong>Grape</strong> Cabernet & Merlot</h3>
-
-                <h3><strong>Bottle price</strong> $21.99</h3>
-            </div>
-
-            <!-- wine 8 With PrettyPhoto  -->
-            <div class="wine-item one-four html css">
-                <div class="img-holder">
-                    <img class="img-responsive" src="img/nw/w5-minervois.png" alt="">
-
-                    <div class="img-overlay"></div>
-                    <div class="overlay-effect">
-                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="img/wine/wine2.png"><i class="fa fa-search"></i></a>
-                        </span>
-                        <span class="RoundBg"><a href=""><i class="fa fa-shopping-cart"></i></a>
-                        </span>
-                    </div>
-                </div>
-                <!-- wine details -->
-                <h2><strong>Bordeaux Superior</strong></h2>
-
-                <h3>Bestonnat Bordeaux Superieur 2014</h3>
-
-                <h3><strong>Country</strong> France</h3>
-
-                <h3><strong>Grape</strong> Cabernet & Merlot</h3>
-
-                <h3><strong>Bottle price</strong> $21.99</h3>
-            </div>
-
-            <!-- wine 9 With PrettyPhoto  -->
-            <div class="wine-item one-four wordpress jquery">
-                <div class="img-holder">
-                    <img class="img-responsive" src="img/nw/w6-millier-shiraz.png" alt="wine">
-
-                    <div class="img-overlay"></div>
-                    <div class="overlay-effect">
-                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="img/wine/wine2.png"><i class="fa fa-search"></i></a>
-                        </span>
-                        <span class="RoundBg"><a href=""><i class="fa fa-shopping-cart"></i></a>
-                        </span>
-                    </div>
-                </div>
-                <!-- wine details -->
-                <h2><strong>Bordeaux Superior</strong></h2>
-
-                <h3>Bestonnat Bordeaux Superieur 2014</h3>
-
-                <h3><strong>Country</strong> France</h3>
-
-                <h3><strong>Grape</strong> Cabernet & Merlot</h3>
-
-                <h3><strong>Bottle price</strong> $21.99</h3>
-            </div>
-
-            <!-- wine 10 With PrettyPhoto  -->
-            <div class="wine-item one-four html jquery">
-                <div class="img-holder">
-                    <img class="img-responsive" src="img/nw/w7-maltus-bordeaux.png" alt="">
-
-                    <div class="img-overlay"></div>
-                    <div class="overlay-effect">
-                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="img/wine/wine2.png"><i class="fa fa-search"></i></a>
-                        </span>
-                        <span class="RoundBg"><a href=""><i class="fa fa-shopping-cart"></i></a>
-                        </span>
-                    </div>
-                </div>
-                <!-- wine details -->
-                <h2><strong>Bordeaux Superior</strong></h2>
-
-                <h3>Bestonnat Bordeaux Superieur 2014</h3>
-
-                <h3><strong>Country</strong> France</h3>
-
-                <h3><strong>Grape</strong> Cabernet & Merlot</h3>
-
-                <h3><strong>Bottle price</strong> $21.99</h3>
-            </div>
-
-            <!-- wine 11 With PrettyPhoto  -->
-            <div class="wine-item one-four wordpress jquery ">
-                <div class="img-holder">
-                    <img class="img-responsive" src="img/nw/w8-castillo.png" alt="">
-
-                    <div class="img-overlay"></div>
-                    <div class="overlay-effect">
-                        <span class="RoundBg"><a data-gal="prettyPhoto[galname]" href="img/wine/wine1.png"><i class="fa fa-search"></i></a>
-                        </span>
-                        <span class="RoundBg"><a href=""><i class="fa fa-shopping-cart"></i></a>
-                        </span>
-                    </div>
-                </div>
-                <!-- wine details -->
-                <h2><strong>Bordeaux Superior</strong></h2>
-
-                <h3>Bestonnat Bordeaux Superieur 2014</h3>
-
-                <h3><strong>Country</strong> France</h3>
-
-                <h3><strong>Grape</strong> Cabernet & Merlot</h3>
-
-                <h3><strong>Bottle price</strong> $21.99</h3>
-            </div>
-        </div>
-    </section>
-</div>
-
-<!-- Bootstrap Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="z-index:1402">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-            </div>
-            <div class="modal-body">
-                <p>
-                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consequuntur dolores doloribus, ea ex expedita fugiat iste maiores officiis sunt? Delectus dolorum ipsum necessitatibus reiciendis. Cum deleniti exercitationem expedita quisquam?</span><span>Consequuntur culpa deserunt eaque eius eligendi illo pariatur possimus provident repellat tempora! Debitis minus nobis quaerat quidem sequi sint. Ad distinctio eligendi inventore magni mollitia, nulla omnis similique voluptate voluptatibus.</span><span>Dicta ex nulla, quaerat quia quibusdam quis sint unde! Aspernatur consectetur debitis eligendi eos libero porro possimus tempore, veniam. A ad alias dolorum excepturi in incidunt laborum perspiciatis repellat vitae.</span><span>Ab consequatur, corporis dolore eos fugiat itaque nesciunt nobis pariatur quibusdam velit, veritatis voluptate? Amet debitis earum, et fugiat laborum maiores perferendis possimus quae quaerat quo ratione sed sit voluptate.</span>
-                </p>
-                <p>
-                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consequuntur dolores doloribus, ea ex expedita fugiat iste maiores officiis sunt? Delectus dolorum ipsum necessitatibus reiciendis. Cum deleniti exercitationem expedita quisquam?</span><span>Consequuntur culpa deserunt eaque eius eligendi illo pariatur possimus provident repellat tempora! Debitis minus nobis quaerat quidem sequi sint. Ad distinctio eligendi inventore magni mollitia, nulla omnis similique voluptate voluptatibus.</span><span>Dicta ex nulla, quaerat quia quibusdam quis sint unde! Aspernatur consectetur debitis eligendi eos libero porro possimus tempore, veniam. A ad alias dolorum excepturi in incidunt laborum perspiciatis repellat vitae.</span><span>Ab consequatur, corporis dolore eos fugiat itaque nesciunt nobis pariatur quibusdam velit, veritatis voluptate? Amet debitis earum, et fugiat laborum maiores perferendis possimus quae quaerat quo ratione sed sit voluptate.</span>
-                </p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Wrapper.start() -->
-<div id="naked_wines" class="wrap">
-    <!-- main page nav -->
-    <nav id="nakedwines-nav">
-        <div class="nakedwines-nav-container">
-            <h3><a href="http://www.nakedwines.com" class="naked-wines-logo pull-left">NakedWines.com</a></h3>
-            <button id="nakedwines-menu-btn" class="btn btn-lg pull-right"><h3>MENU</h3><i class="fa fa-bars fa-2x"></i></button>
-        </div>
-    </nav>
-    <!-- menu that'll animate in from right -->
-    <div id="nakedwines-menu">
-
-        <ul class="nav nav-pills nav-stacked center-block" style="margin-top: 4%">
-            <li role="presentation" class="active"><a href="#">Proto 2</a></li>
-            <li role="presentation"><a href="#">Login</a></li>
-            <li role="presentation"><a href="#">Enter Main Site</a></li>
-            <li role="presentation"><a href="#">Join Waiting List</a></li>
-        </ul>
+<body style="font-family: 'Roboto',serif">
+<section class="container nwland">
+    <div class="landing-img">
+        <img src="img/nw/bottles-circle-red-2-2.jpg" alt="landing img">
     </div>
 
-    <!-- The Landing -->
-    <section id="section" class="image-parallax" style="background-image: url(img/nw/bottles-circle-red-2-2.jpg)">
-        <div class="bg-overlay">
-            <div class="slide-content coolblack">
-                <div class="align-center">
-                    <ul class="text-slide">
-                        <li><h2>12 <span class="text-color">Top-Notch</span> Wines</h2></li>
-                        <li><h2>12 <span class="text-color">Exquisite</span> Tastes</h2></li>
-                        <li><h2>12 <span class="text-color">New</span> Discoveries</h2></li>
-                    </ul>
-                    <h3 class="h3landing">for just $69.99</h3>
-                    <!-- Animated Buy Button -->
-                    <div class="top-logo">
-                        <div class="scrollNormal">
-                            <a href="#section5">
-                                <img alt="Wines" src="img/nw/nw-buttonbig-update1.png" class="anim-btn-img">
-                            </a>
+    <article class="landing-front-text">
+        <div class="landing-text">
+            <h1>12 Top-Notch Wines</h1>
+            <button>Get the wines!</button>
+        </div>
+    </article>
+</section>
+
+<!-- 1) we.guarantee.sec -->
+<section class="container guarantee">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <div class="row sales-pitch-row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeIn h60px">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <img src="img/nw/wines.png" alt="wines">
                         </div>
-                        <div class="scrollDown">
-                            <a href="#section5">
-                                <img alt="Wines" src="img/nw/nw-buttonbig-update2.png">
-                            </a>
+                        <div class="service-box-content">
+                            <p>A greate case of wines made exclusively for NakedWines.com!</p>
                         </div>
                     </div>
-                    <a href="wines12page.html" class="btn btn-default btn-1g img-btn">The Discovery Case</a>
                 </div>
-            </div>
-        </div>
-    </section><!-- Landing sec.end() -->
-
-    <!-- guarantee sales pitch row -->
-    <section class="container-fluid" style="padding: 0">
-        <div class="row sales-pitch-row">
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeIn h60px">
-                <div class="service-box">
-                    <div class="service-icon">
-                        <img src="img/nw/wines.png" alt="wines">
-                    </div>
-                    <div class="service-box-content">
-                        <p>A greate case of wines made exclusively for NakedWines.com!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeIn h60px">
-                <div class="service-box">
-                    <div class="service-icon">
-                        <img src="img/nw/calendar.png" alt="cal">
-                    </div>
-                    <div class="service-box-content">
-                        <p>No requirement to order wine every month like other wine "clubs".</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeIn h60px">
-                <div class="service-box">
-                    <div class="service-icon">
-                        <img src="img/nw/moneyback.png" alt="">
-                    </div>
-                    <div class="service-box-content">
-                        <p>100% money back guarantee an any bottle that doesn't tickle you pink.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 1) we.guarantee.sec -->
-    <section id="section1" class="gaurantee" style="height: 95%">
-        <div class="testimonial-wrap" style="height: 100%">
-            <div class="texture-layer" style="height: 86%">
-                <div class="container">
-                    <!-- header and paragraph sales pitch -->
-                    <div class="row">
-                        <div class="col-md-5 light wow bounceIn">
-                            <h2>We guarantee you'll love these wines</h2>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeIn h60px">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <img src="img/nw/calendar.png" alt="cal">
                         </div>
-
-                        <div class="clearfix"></div>
-
-                        <div class="col-md-5 sub-title light wow slideInRight">
-                            <h3>1-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam
-                                architecto
-                                cupiditate deleniti excepturi nostrum officiis. Dolorem harum hic magnam maiores, quidem
-                                veniam. Commodi ducimus, eligendi eum fugiat laboriosam nobis?
-                            </h3>
-
-                            <div style="margin-top:20px"></div><!-- for a little extra breathing room -->
-                            <div class="align-center">
-                                <!-- Animated Buy Button -->
-                                <div class="top-logo">
-                                    <div class="scrollNormal">
-                                        <a href="#section5">
-                                            <img alt="Wines" src="img/nw/nw-buttonbig-update1.png" class="anim-btn-img">
-                                        </a>
-                                    </div>
-                                    <div class="scrollDown">
-                                        <a href="#section5">
-                                            <img alt="Wines" src="img/nw/nw-buttonbig-update2.png">
-                                        </a>
-                                    </div>
-                                </div>
-                                <a href="wines12page.html" class="btn btn-1 img-btn">Enjoy 12 Bottles</a>
-                            </div>
+                        <div class="service-box-content">
+                            <p>No requirement to order wine every month like other wine "clubs".</p>
                         </div>
                     </div>
-
-
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 2) probably.wondering.sec -->
-    <section id="section2" class="services">
-        <div class="service-wrap">
-            <div class="container">
-                <!-- 2-column row -->
-                <div class="row">
-                    <!-- column 1 -->
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow bounceInLeft">
-                        <h1>So, you're probably wondering... What's the catch?</h1>
-
-                        <h3>I know once you've tried our wines and our service, you'll want to come back. The wine is
-                            too good to miss and we have a great way of connecting you and the winemaker that makes us
-                            different than every other wine company out there.</h3>
-
-                        <h3>But I also know that you hadn't heard of our wines because they're all exclusively made for
-                            our customers. I need to give you a very good reason to give them that first shot</h3>
-
-                        <h2><strong>I guarantee you'l love these wines.</strong></h2>
-
-                        <h3>You and I are naturally curious, so you can't pass this up. I invite you to add this case to
-                            your basket right now and get a case of amazing wines delivered to your door</h3>
-                    </div>
-                    <!-- column 2 -->
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <img src="img/nw/free-bottles.png" alt="free bottles" class="wow bounceInRight">
-                        <h3>Including two free bottles.</h3>
-
-                        <h4><strong>Order now and get two bonus bottles</strong> from Benjamin Darnault. These rich,
-                            Mediterranean bombshells are worth $33, but they're yours free! <strong>That's a total of 12
-                                world-class bottles for $69.99</strong></h4>
-                    </div>
-                </div>
-
-                <div class="slide-content">
-                    <div class="align-center">
-                        <!-- Animated Buy Button -->
-                        <div class="top-logo">
-                            <div class="scrollNormal">
-                                <a href="#section5">
-                                    <img alt="Wines" src="img/nw/nw-buttonbig-update1.png" class="anim-btn-img">
-                                </a>
-                            </div>
-                            <div class="scrollDown">
-                                <a href="#section5">
-                                    <img alt="Wines" src="img/nw/nw-buttonbig-update2.png">
-                                </a>
-                            </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeIn h60px">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <img src="img/nw/moneyback.png" alt="">
                         </div>
-                        <a href="wines12page.html" class="btn btn-1 img-btn">Enjoy These wines</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 4) made.exclusively.for.NakedWines.sec -->
-    <section id="section4" class="pricing">
-        <div class="container">
-            <div class="row flat">
-
-                <div class="row">
-                    <div class="gradient-bg"></div>
-                    <!-- barrel tree img column -->
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 wow fadeInDown">
-                        <img src="img/nw/what-in-the-case.jpg" alt="in case">
-                    </div>
-                    <!-- made exclusively paragraph -->
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-lg-offset-3 col-md-offset-3 wow fadeInRight">
-                        <h3>Every wine in this case is made exclusively for NakedWines.com by a talented independent
-                            winemaker. Thousands of wine drinkers like you have rated the wines and said they'd buy them
-                            again - </h3>
-
-                        <h3>they're guaranteed to tickle your tastebuds.</h3>
-                        <h4 id="z12wines">What's in the case <i class="fa fa-arrow-circle-o-right"></i></h4>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row" style="margin-top:30px">
-                <div class="col-md-12 big-title wow bounceIn">
-                    <h2>Your wine is waiting.</h2>
-                </div>
-
-                <div class="clearfix"></div>
-
-                <!-- Animated Buy Button -->
-                <div class="slide-content">
-                    <div class="align-center">
-                        <!-- Animated Buy Button -->
-                        <div class="top-logo">
-                            <div class="scrollNormal">
-                                <a href="#section5">
-                                    <img alt="Wines" src="img/nw/nw-buttonbig-update1.png" class="anim-btn-img">
-                                </a>
-                            </div>
-                            <div class="scrollDown">
-                                <a href="#section5">
-                                    <img alt="Wines" src="img/nw/nw-buttonbig-update2.png">
-                                </a>
-                            </div>
+                        <div class="service-box-content">
+                            <p>100% money back guarantee an any bottle that doesn't tickle you pink.</p>
                         </div>
-                        <a href="wines12page.html" class="btn btn-1 img-btn">100% Guaranteed To Please</a>
                     </div>
-                </div>
-
-
-                <div class="col-md-12 sub-title text-center wow slideInRight">
-                    <p type="button"data-toggle="modal" data-target="#myModal" style="cursor: pointer">
-                        <small>Terms and Conditions Apply</small>
-                    </p>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- 5) fake.purchase.form.sec -->
-    <section id="section5" class="contacts">
-        <!-- fake purchase form -->
-        <div class="contact-form">
-            <div class="container">
-                <!-- Title row -->
-                <div class="row">
-                    <div class="col-md-12 big-title wow bounceIn">
-                        <h2>Buy</h2>
-                    </div>
-
-                    <div class="clearfix"></div>
-
-                    <div class="col-md-12 sub-title text-center wow slideInRight">
-                        <h3>These superb wines will be on their way soon.</h3>
-                    </div>
-                </div>
-
-                <!-- Form element row -->
-                <div class="row text-center">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-8">
-                        <form>
-                            <fieldset>
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow fadeInLeft">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <input class="form-control" id="name" name="name" type="text" placeholder="Name" value="" required>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <input class="form-control" type="email" id="email" name="email" placeholder="Address" value="" required>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <input class="form-control" type="text" id="subject" name="subject" placeholder="Card#" value="" required>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </fieldset>
-                        </form>
-                    </div>
-                    <div class="col-md-2"></div>
-                </div>
-            </div>
+        <div class="panel-body">
+            <h2>Panel content</h2>
+            <p>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aspernatur, deleniti ea excepturi fugit ipsum iusto molestiae nam neque nisi omnis porro quas quidem quisquam sint suscipit tempore temporibus voluptate!</span><span>Aliquid autem distinctio dolor, eligendi explicabo hic id ipsum laudantium, minus natus necessitatibus, nemo numquam officiis pariatur temporibus totam voluptatibus. Ab aspernatur blanditiis deleniti dignissimos enim hic minus velit. Quo?</span>
+            </p>
+            <p>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aspernatur, deleniti ea excepturi fugit ipsum iusto molestiae nam neque nisi omnis porro quas quidem quisquam sint suscipit tempore temporibus voluptate!</span><span>Aliquid autem distinctio dolor, eligendi explicabo hic id ipsum laudantium, minus natus necessitatibus, nemo numquam officiis pariatur temporibus totam voluptatibus. Ab aspernatur blanditiis deleniti dignissimos enim hic minus velit. Quo?</span>
+            </p>
+            <h2>Panel content</h2>
+            <p>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aspernatur, deleniti ea excepturi fugit ipsum iusto molestiae nam neque nisi omnis porro quas quidem quisquam sint suscipit tempore temporibus voluptate!</span><span>Aliquid autem distinctio dolor, eligendi explicabo hic id ipsum laudantium, minus natus necessitatibus, nemo numquam officiis pariatur temporibus totam voluptatibus. Ab aspernatur blanditiis deleniti dignissimos enim hic minus velit. Quo?</span>
+            </p>
+            <p>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aspernatur, deleniti ea excepturi fugit ipsum iusto molestiae nam neque nisi omnis porro quas quidem quisquam sint suscipit tempore temporibus voluptate!</span><span>Aliquid autem distinctio dolor, eligendi explicabo hic id ipsum laudantium, minus natus necessitatibus, nemo numquam officiis pariatur temporibus totam voluptatibus. Ab aspernatur blanditiis deleniti dignissimos enim hic minus velit. Quo?</span>
+            </p>
         </div>
-    </section>
+    </div>
+</section>
 
-    <footer class="footer-wrap text-center">
-        <div class="container footer-case-option">
-            <h3 style="color: whitesmoke">Other optional cases</h3>
-            <span class="btn btn-3 img-btn">Red Case</span>
-            <span class="btn btn-3 img-btn">White Case</span>
-        </div>
-    </footer>
-
-    <!-- Scroll To Top Fixed Button -->
-    <a href="#" class="scrollup"><i class="fa fa-arrow-circle-o-up"></i></a>
-</div>
-<!-- Wrapper.end() -->
-
-
-<!-- The Scripts -->
 <script src="js/jquery.min.js"></script>
-<script src="js/jquery-migrate-1.0.0.js"></script>
-<script src="js/jquery-ui.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.parallax.js"></script>
-<script src="js/jquery.hparallax.js"></script>
-<script src="js/jquery.wait.js"></script>
-<script src="js/appear.js"></script>
-<script src="js/fappear.js"></script>
-<script src="js/modernizr-2.6.2.min.js"></script>
-<script src="js/jquery.bxslider.min.js"></script>
-<script src="js/jquery.maximage.js"></script>
-<script src="js/jquery.cycle.all.js"></script>
-<script src="js/jquery.prettyPhoto.js"></script>
-<script src="js/jquery.sticky.js"></script>
-<script src="js/jquery.isotope.js"></script>
-<script src="js/imagesloaded.pkgd.min.js"></script>
-<script src="js/jquery.countTo.js"></script>
-<script src="js/skrollr.min.js"></script>
-<script src="js/jquery.scrollTo.min.js"></script>
-<script src="js/jquery.nav.js"></script>
-<script src="js/wow.js"></script>
-<!--<script src="http://maps.google.com/maps/api/js?sensor=false"></script>-->
-<!--<script src="js/jquery.gmap.min.js"></script>-->
-<!--<script src="js/jquery.mb.YTPlayer.js"></script>-->
-<script src="js/tytabs.js"></script>
-<script src="js/custom.js"></script>
 </body>
 </html>

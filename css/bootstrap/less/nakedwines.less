@@ -1,0 +1,78 @@
+/* Naked Wines Test LESS code */
+
+//vars
+@coolblack: #525252;
+@jwhitesmoke: #ECECEC;
+@wide: 1.0;
+@tall: 1.0;
+
+//properties
+@b: border;
+@c: color;
+@bg: background;
+
+body {
+	font-family: 'Roboto';
+}
+
+.hundred(@w:@wide*100px; @h:@tall*100px) {//make element at least 100x100 pixels
+	width: @w;
+	height: @h;
+}
+
+.posab(){
+	position: absolute;
+}
+
+.landing-span {
+	background-color: @coolblack;
+	color: @jwhitesmoke;
+	.border-light(4px; darken(@jwhitesmoke, 20%));
+	padding: 12px 12px;
+}
+
+.border-light(@radius: 2px; @saturation: @jwhitesmoke) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	border-radius: @radius;
+	border: solid @saturation;
+}
+
+section.container.nwland {
+	z-index: 1;
+	.landing-img {
+		position: relative;
+		z-index: 100;
+		.hundred(percentage(@wide); @tall*800px);
+		img {
+			.hundred(percentage(@wide)+28%; percentage(@tall)+20%);
+			position: absolute;
+			left: @wide * -12rem;
+		}
+	}
+	.landing-front-text {
+		z-index: 101;
+		position: relative;
+		text-align: center;
+		.landing-text {
+			.posab;
+			top: @tall * -50rem;
+			left: @wide * 40rem;
+		}
+	}
+}
+
+section.container.guarantee {
+	z-index: 150;
+	position: relative;
+	.panel {
+		z-index: 200;
+		@{b}:0;
+	}
+	.panel-heading {
+		@{b}-@{c}: 0;
+		@{bg}-@{c}: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}
