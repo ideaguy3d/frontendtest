@@ -1578,7 +1578,7 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 1365px;
   }
 }
 .container-fluid {
@@ -6548,9 +6548,6 @@ button.close {
   }
 }
 /* Naked Wines Test LESS code */
-body {
-  font-family: 'Roboto';
-}
 .landing-span {
   background-color: #525252;
   color: #ececec;
@@ -6563,17 +6560,17 @@ body {
 section.container.nwland {
   z-index: 1;
 }
-section.container.nwland .landing-img {
+section.container.nwland .landing-img-div {
   position: relative;
   z-index: 100;
   width: 100%;
   height: 800px;
 }
-section.container.nwland .landing-img img {
-  width: 128%;
-  height: 120%;
+section.container.nwland .landing-img-div .landing-img {
+  width: 1196px;
+  height: 800px;
   position: absolute;
-  left: -12rem;
+  left: 5%;
 }
 section.container.nwland .landing-front-text {
   z-index: 101;
@@ -6582,13 +6579,16 @@ section.container.nwland .landing-front-text {
 }
 section.container.nwland .landing-front-text .landing-text {
   position: absolute;
-  top: -50rem;
-  left: 40rem;
+  top: -55rem;
+  left: 49rem;
+}
+section.container.nwland .landing-front-text .landing-text h3 {
+  margin: 0 0 24px 0 ;
 }
 section.container.guarantee {
   z-index: 150;
   position: relative;
-  top: -10rem;
+  top: -7rem;
 }
 section.container.guarantee .panel {
   z-index: 200;
@@ -6599,4 +6599,19 @@ section.container.guarantee .panel-heading {
   background-color: 0;
   padding-top: 0;
   padding-bottom: 0;
+}
+img.nwphoto {
+  border: solid white 16px;
+  box-shadow: 2px 6px 4px 4px #787878;
+  margin-left: 10%;
+}
+div.gradient-bg {
+  background: linear-gradient(to right, #f9f9f9, #ececec);
+  position: relative;
+  top: 100px;
+  height: 400px;
+  width: 100%;
+}
+div.gradient-bg + div > h3 {
+  margin-top: 10%;
 }

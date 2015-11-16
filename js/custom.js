@@ -155,12 +155,32 @@ jQuery(document).ready(function (){
         jQuery('.image-parallax').parallax("50%", 0.6);
     }
 
-    // Horizontal parallax
-    jQuery('.about-wrap .parallax-layer').hparallax({
-        mouseport: jQuery('.about-wrap')
+    var $landImg = jQuery('div.landing-img-div>img');
+    if(pageWidth < 1200){ //window might be < 1200 when req is made
+        $landImg.removeClass('landing-img');
+        $landImg.attr('class', 'thumbnail img-thumbnail');
+    }
+    jQuery(window).resize(function(){
+        pageWidth = jQuery(window).width();
+        //>1845 - 49rem
+        if(pageWidth > 1200){
+            //console.log("2) "+pageWidth);
+            $landImg.removeClass('thumbnail img-thumbnail');
+            $landImg.addClass('landing-img');
+        } else if (pageWidth < 1200) {
+            //console.log("3 - "+pageWidth);
+            $landImg.removeClass('landing-img');
+            $landImg.attr('class', 'thumbnail img-thumbnail');
+        }
+        //jQuery('.landing-text').css("left", function(){
+        //    //quick formula to keep landing text centered to pic
+        //    return (Math.floor(pageWidth/10)/4)+1 + 'rem';
+        //    /*
+        //    if pageWidth = 1700px then Math.floor(pageWidth/10)/4 = 42.5
+        //    left = 43.5rem
+        //    */
+        //});
     });
-
-
 
 });// end of main jQuery(document).ready();
 
@@ -189,7 +209,6 @@ jQuery(document).ready(function(){
         }, 600);
         return false;
     });
-
 });
 
 // BxSlider
@@ -305,17 +324,4 @@ jQuery(function(){
     jQuery('a[data-rel^="prettyPhoto"]').prettyPhoto();
 });
 
-/* ------------------------Firefox anchor fix------------------------ */
-//$(document).ready(function(){
-//        if ( $.browser.mozilla ) {
-//            var h = window.location.hash;
-//            if (h) {
-//                var headerH = $('#navigation').outerHeight();
-//                $('html, body').stop().animate({
-//                    scrollTop: $(h).offset().top - headerH + "px"
-//                }, 1200, 'easeInOutExpo');
-//                event.preventDefault();
-//            }
-//        }
-//    });
 

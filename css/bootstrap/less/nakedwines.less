@@ -10,12 +10,10 @@
 @b: border;
 @c: color;
 @bg: background;
+@w: width;
 
-body {
-	font-family: 'Roboto';
-}
-
-.hundred(@w:@wide*100px; @h:@tall*100px) {//make element at least 100x100 pixels
+//mixins
+.nwsize(@w:@wide*100px; @h:@tall*100px) {//make element at least 100x100 pixels
 	width: @w;
 	height: @h;
 }
@@ -38,16 +36,21 @@ body {
 	border: solid @saturation;
 }
 
+.nwframe(@color:white; @style:solid; @size:12px) {
+	border: @style @color @size;
+	box-shadow: 2px 6px 4px 4px lighten(@coolblack,15%);
+}
+//callers (now I'm using selectors on DOM elements)
 section.container.nwland {
 	z-index: 1;
-	.landing-img {
+	.landing-img-div {
 		position: relative;
 		z-index: 100;
-		.hundred(percentage(@wide); @tall*800px);
-		img {
-			.hundred(percentage(@wide)+28%; percentage(@tall)+20%);
+		.nwsize(percentage(@wide); @tall*800px);
+		.landing-img {
+			.nwsize(1196px; 800px);
 			position: absolute;
-			left: @wide * -12rem;
+			left: percentage(@wide)-95%;
 		}
 	}
 	.landing-front-text {
@@ -56,8 +59,11 @@ section.container.nwland {
 		text-align: center;
 		.landing-text {
 			.posab;
-			top: @tall * -50rem;
-			left: @wide * 40rem;
+			top: @tall * -55rem;
+			left: @wide * 49rem;
+			h3 {
+				margin: 0 0 24px 0 ;
+			}
 		}
 	}
 }
@@ -65,7 +71,7 @@ section.container.nwland {
 section.container.guarantee {
 	z-index: 150;
 	position: relative;
-	top: -10rem;
+	top: -7rem;
 	.panel {
 		z-index: 200;
 		@{b}:0;
@@ -76,4 +82,21 @@ section.container.guarantee {
 		padding-top: 0;
 		padding-bottom: 0;
 	}
+}
+
+img.nwphoto {
+	.nwframe(@size:16px;);
+	margin-left: 10%;
+}
+
+div.gradient-bg{
+	background: linear-gradient(to right, lighten(@jwhitesmoke, 5%), @jwhitesmoke);
+	position: relative;
+	top: 100px;
+	height: 400px;
+	width: 100%;
+}
+
+div.gradient-bg+div>h3 {
+	margin-top:10%;
 }

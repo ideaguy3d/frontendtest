@@ -36,7 +36,7 @@ body {
     height: 100%;
     width: 100%;
     color: #566473;
-    background: #F1F4F9;
+    /*background: #F1F4F9;*/
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 24px;
@@ -55,7 +55,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     font-size: 36px;
     letter-spacing: 1px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     margin-bottom: 15px;
 }
 
@@ -489,7 +489,7 @@ ul.text-slide {
     cursor: pointer;
     padding: 20px 20px;
     display: inline-block;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     letter-spacing: 1px;
     font-weight: 700;
     outline: none;
@@ -543,10 +543,17 @@ ul.text-slide {
     top: 0;
     left: 0;
     background: whitesmoke;
+    color: #2b2b2b;
 }
 
-.btn-1:hover:after,
-.btn-1:active:after,
+a.btn.btn-1:hover:after,
+a.btn.btn-1:active:after{
+    height: 100%;
+}
+a.btn-1:hover {
+    color:whitesmoke;
+}
+
 .btn-3:hover:after,
 .btn-3:active:after {
     height: 100%;
@@ -620,7 +627,7 @@ ul.text-slide {
     margin: 15px 0;
     outline: none;
     text-decoration: none;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 
 }
 
@@ -631,7 +638,7 @@ ul.text-slide {
     padding: 10px 20px;
     outline: none;
     text-decoration: none;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 
 }
 
@@ -699,7 +706,7 @@ nav a:focus {
     line-height: 50px;
     margin: 20px auto 50px;
     text-align: center;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     text-shadow: none;
     font-weight: 700;
     position: relative;
@@ -1167,7 +1174,7 @@ div.content-box.big div.content-box-info p {
 
 #filters ul li a h5 {
     padding: 10px 20px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     background-color: #fff;
     border-radius: 3px;
     font-size: 13px;
@@ -1718,7 +1725,7 @@ div.content-box.big div.content-box-info p {
 .fun-box p {
     color: white;
     font-size: 16px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     margin-bottom: 0;
 }
 
@@ -1735,7 +1742,7 @@ div.content-box.big div.content-box-info p {
 
 .quote-wrap {
     text-align: center;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 
 .quote-wrap h2 {
@@ -2538,7 +2545,7 @@ ol.commentlist li:first-child {
 
 .sales-pitch-row {
     background-color: #2b2b2b;
-    padding: 2% 12%;
+    padding: 2% 2%;
 }
 
 .sales-pitch-row .service-box-content p {
